@@ -1,0 +1,94 @@
+version: "3.0"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_function
+
+- story: bye
+  steps:
+  - intent: goodbye
+  - action: utter_bye
+
+- story: dia1 inquire delivery
+  steps:
+  - intent: inquire_delivery
+  - action: utter_ask_delivery
+
+- story: dia1 feel urgent
+  steps:
+  - intent: fill_urgent
+  - action: utter_sorry_urgent
+  - intent: want_subsidy
+  - action: utter_tell_subsidy
+  - intent: hope_quick
+  - action: utter_sorry_hope
+
+- story: dia1 give delivery
+  steps:
+  - intent: give_delivery
+  - action: action_display_delivery
+
+- story: dia2 inquire new model
+  steps:
+  - intent: inquire_new_model
+  - action: utter_tell_newmodel
+  - action: utter_tellmore_newmodel
+
+- story: dia2 want recommend
+  steps:
+  - intent: want_recommend
+  - action: utter_recommend
+  - intent: inquire_price
+  - action: utter_price
+  - intent: konw_delivery_time
+  - action: utter_delivery_time
+
+- story: dia3 after sales
+  steps:
+  - intent: call_aftersales
+  - action: utter_know_model
+  - intent: give_problem
+  - action: utter_provide_repair
+  - intent: ask_physical_store
+  - action: utter_know_city
+  - intent: fill_trouble
+  - action: utter_ask_info
+  - intent: deny
+  - action: utter_bye
+
+
+- story: dia3 give_model
+  steps:
+  - intent: give_model
+  - action: action_display_model
+
+- story: dia3 give_info
+  steps:
+  - intent: give_info
+  - action: action_display_contact
+
+- story: dia3 give_city
+  steps:
+  - intent: give_city
+  - action: action_provide_city
+
+- story: dia4 complain bug
+  steps:
+  - intent: complain
+  - action: utter_ask_bug
+  - intent: give_bug
+  - action: utter_bug_list
+
+- story: dia4 give man help
+  steps:
+  - intent: not_solve
+  - action: action_display_manhelp
+
+- story: dia4 choose man
+  steps:
+  - intent: choose_man
+  - action: action_display_man_contact

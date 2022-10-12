@@ -1,0 +1,90 @@
+version: "3.0"
+
+rules:
+
+- rule: Say greet anytime the user says goodbye
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_function
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_bye
+
+- rule: inquire_delivery
+  steps:
+  - intent: inquire_delivery
+  - action: utter_ask_delivery
+
+- rule: feel urgent
+  steps:
+  - intent: fill_urgent
+  - action: utter_sorry_urgent
+
+- rule: want_subsidy
+  steps:
+  - intent: want_subsidy
+  - action: utter_tell_subsidy
+
+- rule: hope_quick
+  steps:
+  - intent: hope_quick
+  - action: utter_sorry_hope
+
+- rule: inquire_new_model
+  steps:
+  - intent: inquire_new_model
+  - action: utter_tell_newmodel
+  - action: utter_tellmore_newmodel
+
+- rule: want_recommend
+  steps:
+  - intent: want_recommend
+  - action: utter_recommend
+
+- rule: inquire_price
+  steps:
+  - intent: inquire_price
+  - action: utter_price
+
+- rule: konw_delivery_time
+  steps:
+  - intent: konw_delivery_time
+  - action: utter_delivery_time
+
+- rule: call_aftersales
+  steps:
+  - intent: call_aftersales
+  - action: utter_know_model
+
+- rule: give_problem
+  steps:
+  - intent: give_problem
+  - action: utter_provide_repair
+
+- rule: ask_physical_store
+  steps:
+  - intent: ask_physical_store
+  - action: utter_know_city
+
+- rule: fill_trouble
+  steps:
+  - intent: fill_trouble
+  - action: utter_ask_info
+
+- rule: konw_delivery_time
+  steps:
+  - intent: deny
+  - action: utter_bye
+
+- rule: complain
+  steps:
+  - intent: complain
+  - action: utter_ask_bug
+
+- rule: give_bug
+  steps:
+  - intent: give_bug
+  - action: utter_bug_list

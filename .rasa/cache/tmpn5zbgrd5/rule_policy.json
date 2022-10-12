@@ -1,0 +1,50 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_function",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_function\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"complain\"}}]": "utter_ask_bug",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"complain\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_bug\"}, \"user\": {\"intent\": \"complain\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"konw_delivery_time\"}}]": "utter_delivery_time",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"konw_delivery_time\"}}, {\"prev_action\": {\"action_name\": \"utter_delivery_time\"}, \"user\": {\"intent\": \"konw_delivery_time\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"hope_quick\"}}]": "utter_sorry_hope",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"hope_quick\"}}, {\"prev_action\": {\"action_name\": \"utter_sorry_hope\"}, \"user\": {\"intent\": \"hope_quick\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_price\"}}]": "utter_price",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_price\"}}, {\"prev_action\": {\"action_name\": \"utter_price\"}, \"user\": {\"intent\": \"inquire_price\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"call_aftersales\"}}]": "utter_know_model",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"call_aftersales\"}}, {\"prev_action\": {\"action_name\": \"utter_know_model\"}, \"user\": {\"intent\": \"call_aftersales\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_physical_store\"}}]": "utter_know_city",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_physical_store\"}}, {\"prev_action\": {\"action_name\": \"utter_know_city\"}, \"user\": {\"intent\": \"ask_physical_store\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_delivery\"}}]": "utter_ask_delivery",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_delivery\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_delivery\"}, \"user\": {\"intent\": \"inquire_delivery\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"give_problem\"}}]": "utter_provide_repair",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"give_problem\"}}, {\"prev_action\": {\"action_name\": \"utter_provide_repair\"}, \"user\": {\"intent\": \"give_problem\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"want_subsidy\"}}]": "utter_tell_subsidy",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"want_subsidy\"}}, {\"prev_action\": {\"action_name\": \"utter_tell_subsidy\"}, \"user\": {\"intent\": \"want_subsidy\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fill_trouble\"}}]": "utter_ask_info",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fill_trouble\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_info\"}, \"user\": {\"intent\": \"fill_trouble\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_new_model\"}}]": "utter_tell_newmodel",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_new_model\"}}, {\"prev_action\": {\"action_name\": \"utter_tell_newmodel\"}, \"user\": {\"intent\": \"inquire_new_model\"}}]": "utter_tellmore_newmodel",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_new_model\"}}, {\"prev_action\": {\"action_name\": \"utter_tell_newmodel\"}, \"user\": {\"intent\": \"inquire_new_model\"}}, {\"prev_action\": {\"action_name\": \"utter_tellmore_newmodel\"}, \"user\": {\"intent\": \"inquire_new_model\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"give_bug\"}}]": "utter_bug_list",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"give_bug\"}}, {\"prev_action\": {\"action_name\": \"utter_bug_list\"}, \"user\": {\"intent\": \"give_bug\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny\"}}]": "utter_bye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny\"}}, {\"prev_action\": {\"action_name\": \"utter_bye\"}, \"user\": {\"intent\": \"deny\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_bye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_bye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fill_urgent\"}}]": "utter_sorry_urgent",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fill_urgent\"}}, {\"prev_action\": {\"action_name\": \"utter_sorry_urgent\"}, \"user\": {\"intent\": \"fill_urgent\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"want_recommend\"}}]": "utter_recommend",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"want_recommend\"}}, {\"prev_action\": {\"action_name\": \"utter_recommend\"}, \"user\": {\"intent\": \"want_recommend\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start"
+    ]
+  }
+}

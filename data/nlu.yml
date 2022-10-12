@@ -1,0 +1,164 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - are you there?
+    - hey
+    - hello
+    - hi
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - no, thank you
+
+- intent: inquire_delivery
+  examples: |
+    - where is my delivery?
+    - I would like to know exactly where my delivery is now
+
+- intent: give_delivery
+  examples: |
+    - it is [QWE122](delivery)
+    - it is [SPT763](delivery)
+    - it is [BRJ526](delivery)
+    - it is [BTU655](delivery)
+    - it is [MQB622](delivery)
+    - it is [AMP985](delivery)
+    - it is [DFS211](delivery)
+    - [QWE122](delivery)
+    - [SPT763](delivery)
+    - [BRJ526](delivery)
+    - [DFS211](delivery)
+    - [AMP985](delivery)
+    - [MQB622](delivery)
+    - [BTU655](delivery)
+
+- intent: fill_urgent
+  examples: |
+    - what should I do if it's too long? I need it urgently
+    - I need it urgently
+    - I am urgent
+    - it is urgent
+
+- intent: want_subsidy
+  examples: |
+    - well, that's too bad. Isn't there any subsidy?
+    - any subsidy?
+    - Isn't there any subsidy?
+    - well, that's too bad.
+
+- intent: hope_quick
+  examples: |
+    - well, I hope it will be delivered soon
+    - I hope it will be delivered soon
+    - be quick
+
+- intent: inquire_new_model
+  examples: |
+    - wccessories and related models
+    - new phone?
+    - are there new phones?
+
+- intent: want_recommend
+  examples: |
+    - what do you recommend?
+    - can you recommend?
+
+- intent: inquire_price
+  examples: |
+    - how about the price?
+    - the price?
+    - is it cheaper to buy online?
+    - can be cheaper?
+
+- intent: konw_delivery_time
+  examples: |
+    - well, when will it be delivered?
+    - when will it be delivered?
+
+- intent: call_aftersales
+  examples: |
+    - after-sales service
+    - I want after-sales service
+    - could you provide after-sales service?
+
+- intent: give_model
+  examples: |
+    - model is [Casper Pro](model)
+    - model is [Casper Pro XS](model)
+    - it is [Casper Pro](model)
+    - it is [Casper Pro XS](model)
+    - [Casper Pro](model)
+    - [Casper Pro XS](model)
+
+- intent: give_problem
+  examples: |
+    - signal is bad
+    - the phone is seriously interrupted
+    - the phone has a serious fever
+
+- intent: ask_physical_store
+  examples: |
+    - where is the physical store about?
+    - where is the physical store?
+
+- intent: give_city
+  examples: |
+    - [Shanghai](city)
+    - [Nanjing](city)
+    - [Hangzhou](city)
+    - [Beijing](city)
+    - [Xian](city)
+    - [Hongkong](city)
+    - [Hainan](city)
+
+- intent: fill_trouble
+  examples: |
+    - no, it's too much trouble. I'd better choose door-to-door service
+    - no, I'd better choose door-to-door service
+    - I want door-to-door service
+
+- intent: give_info
+  examples: |
+    - [13367679865](contact)
+    - [13876456679](contact)
+    - [qwer1212@qq.com](contact)
+    - [123456@qq.com](contact)
+
+- intent: complain
+  examples: |
+    - how can the my phone I bought not work well?
+    - my phone doesn't work well
+
+
+- intent: give_bug
+  examples: |
+    - mine signal is bad
+    - it is seriously interrupted
+    - it often has a serious fever
+
+- intent: not_solve
+  examples: |
+    - no, I can't understand what this instruction says
+    - I can't solve this problem
+    - I don't know what the instruction says
+
+- intent: choose_man
+  examples: |
+    - [Frank](personnel)
+    - [Bob](personnel)
+    - [Stark](personnel)
+    - [Leijun](personnel)

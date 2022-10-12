@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-city",
+      "2": "I-city",
+      "3": "L-city",
+      "4": "U-city",
+      "5": "B-contact",
+      "6": "I-contact",
+      "7": "L-contact",
+      "8": "U-contact",
+      "9": "B-delivery",
+      "10": "I-delivery",
+      "11": "L-delivery",
+      "12": "U-delivery",
+      "13": "B-model",
+      "14": "I-model",
+      "15": "L-model",
+      "16": "U-model",
+      "17": "B-personnel",
+      "18": "I-personnel",
+      "19": "L-personnel",
+      "20": "U-personnel",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-city": 1,
+      "I-city": 2,
+      "L-city": 3,
+      "U-city": 4,
+      "B-contact": 5,
+      "I-contact": 6,
+      "L-contact": 7,
+      "U-contact": 8,
+      "B-delivery": 9,
+      "I-delivery": 10,
+      "L-delivery": 11,
+      "U-delivery": 12,
+      "B-model": 13,
+      "I-model": 14,
+      "L-model": 15,
+      "U-model": 16,
+      "B-personnel": 17,
+      "I-personnel": 18,
+      "L-personnel": 19,
+      "U-personnel": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

@@ -1,0 +1,141 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - inquire_delivery
+  - give_delivery
+  - fill_urgent
+  - want_subsidy
+  - hope_quick
+  - inquire_new_model
+  - want_recommend
+  - inquire_price
+  - konw_delivery_time
+  - call_aftersales
+  - give_model
+  - give_problem
+  - ask_physical_store
+  - give_city
+  - fill_trouble
+  - give_info
+  - complain
+  - give_bug
+  - not_solve
+  - choose_man
+
+entities:
+  - delivery
+  - model
+  - city
+  - contact
+  - personnel
+
+slots:
+  delivery_num:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: delivery
+  model_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: model
+  city_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: city
+  contact_way:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: contact
+  personnel_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: personnel
+
+
+
+responses:
+  utter_greet:
+  - text: "Hello, I am your manual customer, may I help you?"
+
+  utter_function:
+  - text: "My function is \n1.inquire delivery\n2.recommend new model\n3.after-sales service."
+
+  utter_bye:
+  - text: "It's my pleasure to serve you. Goodbye."
+
+  utter_ask_delivery:
+  - text: "What is your deliver number? (Example:GFD223)"
+
+  utter_tell_subsidy:
+  - text: "Sorry again.\nIf it is more than 3 days, we will refund the freight and give you a coupon."
+
+  utter_sorry_urgent:
+  - text: "Sorry for the trouble. Please wait patiently."
+
+  utter_sorry_hope:
+  - text: "Once again, I would like to express my sincere apologies to you.\nIf you have any questions, please feel free to consult me. Goodbye!"
+
+  utter_tell_newmodel:
+    - text: "The brand new Casper Pro series, the remodeled Casper Pro Xs is on display."
+
+  utter_tellmore_newmodel:
+    - text: "New Casper Pro, now on sale;\nDuring the activity to enjoy the maximum 6299 yuan subsidy;\nSpecified 20% discount version limited time to send Bluetooth headset;\nCasper Pro series specified products at hand price as low as 6499 yuan."
+
+  utter_recommend:
+    - text: "We recommend the latest Casper Pro, enjoy 6299 yuan subsidy during the activity."
+
+  utter_price:
+    - text: "These two weeks enjoy the activity price:\n\t128G limited time 6299 yuan;\n\t256G limited time 6499 yuan.\nThere will be some discounts on in-store prices."
+
+  utter_delivery_time:
+    - text: "Our new products have door-to-door delivery service,\nyou can place an order within 24 hours to deliver to your designated address."
+
+  utter_know_model:
+    - text: "May I know your product model?"
+
+  utter_know_problem:
+    - text: "What is your specific problem?"
+
+  utter_provide_repair:
+    - text: "We have a special offline physical repair shop, you can go to have a look;\nWe also provide on-site repair service, but will charge the corresponding maintenance fee and service charge."
+
+  utter_know_city:
+    - text: "Which city are you in?"
+
+  utter_ask_info:
+    - text: "OK, please leave your contact information.\nWe will arrange professional maintenance personnel to serve you."
+
+  utter_info_goon:
+    - text: "OK, we will arrange door-to-door service for you as soon as possible.\nDo you have any questions?"
+
+  utter_ask_bug:
+    - text: "Hello, we are very sorry for your problem.\nMay I ask what specific aspects of your problem?"
+
+  utter_bug_list:
+    - text: "You can check our bug list for details in this regard."
+
+actions:
+  - action_display_delivery
+  - action_provide_city
+  - action_display_contact
+  - action_display_model
+  - action_display_manhelp
+  - action_display_man_contact
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
